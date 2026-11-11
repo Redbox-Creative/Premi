@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Awards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo-container">
+            <h1>Hall of Awards</h1>
+            <p>Redbox Creative</p>
+        </div>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cerca un premio..."
+            >
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <div id="awardsGrid" class="awards-grid">
+
+            <!-- Le card verranno generate da app.js -->
+
+        </div>
+
+    </main>
+
+
+    <template id="awardTemplate">
+
+        <article class="award-card">
+
+            <div class="award-image-container">
+                <img
+                    class="award-image"
+                    src=""
+                    alt=""
+                >
+            </div>
+
+            <div class="award-info">
+                <h2 class="award-title"></h2>
+
+                <div class="award-meta">
+
+                    <span class="award-category"></span>
+
+                    <span class="award-year"></span>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </template>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
